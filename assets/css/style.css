@@ -3,7 +3,7 @@
   --bg-body: #f5f4f1;
   --txt-body: #1d1c1c;
   --bg-nav: #b6ccd8;
-  --color-primary: #00668c;
+  --color-primary: #0896ca;
   --btn-color: #000;
   --color-secondary: #e0e0e0;
 }
@@ -13,7 +13,7 @@ body.dark {
   --txt-body: #e0e0e0;
   --bg-nav: #0D6E6E;
   --btn-color: #e7e9e9;
-  --color-primary: #1d2e3d;
+  --color-primary: #273d50;
 }
 
 html {
@@ -442,6 +442,226 @@ img {
   padding: 0;
 }
 
+/*
+
+.section-testimonials{
+  display: relative;
+  align-items: center;
+
+}
+
+.slide-content{
+  margin:0 40px;
+}
+
+.card{
+  width: 320 px;
+  border-radius: 25px;
+  background-color: var(--color-primary);
+}
+
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width:100%;
+}
+
+
+.image-content{
+  position:relative;
+  row-gap: 5px;
+  border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after{
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(75, 27, 187);
+}
+
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius:  50%;
+  background: #fff;
+  padding:3px;
+}
+
+.card-image .card-img{ 
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+  border-radius:  50%;
+  border:4px solid (var(--color-primary))
+}
+
+.name{
+  font-size:18px;
+  font-weight: 500;
+  color: var(--color-secondary)
+}
+
+.description{
+  font-size:14px;
+  color: var(--color-secondary);
+  text-align: center;
+}
+
+.button{
+  border: none;
+  font-size: 16px;
+  color:hsl(140, 73%, 37%);
+  padding: 8px 16px;
+  background-color: red;
+  border-radius: 6px;
+  margin:14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover{
+  background: red;
+}
+*/
+
+/*TESTIMONIAL */
+
+/* Testimonials */
+.swiper {
+  padding: 1.5em;
+}
+
+.swiper .card {
+  padding: 1.5em;
+  border-radius: 10px;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.swiper .card-img {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.swiper .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.swiper .swiper-slide {
+  margin: 0;
+  height: auto;
+  width: 100%;
+  padding: 0;
+  opacity: 0.2;
+  background: var(--color-primary);
+  border-radius: 6px;
+  transition: all 0.5s ease-in-out;
+}
+
+.swiper .swiper-slide.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1.0);
+}
+
+.swiper .swiper-nav-wrapper {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0;
+  width: auto;
+  padding-top: 3em;
+}
+
+.swiper .swiper-nav-wrapper .swiper-button-next,
+.swiper .swiper-nav-wrapper .swiper-button-prev {
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  position: relative !important;
+}
+
+.swiper .swiper-nav-wrapper .swiper-button-next:after,
+.swiper .swiper-nav-wrapper .swiper-button-prev:after {
+  display: none;
+}
+
+.swiper .swiper-nav-wrapper .swiper-button-next,
+.swiper .swiper-nav-wrapper .swiper-button-prev,
+.swiper .swiper-nav-wrapper .swiper-container-rtl .swiper-button-prev,
+.swiper .swiper-nav-wrapper .swiper-container-rtl .swiper-button-next {
+  width: 100%;
+  height: 0px;
+  margin: auto;
+  padding: auto;
+}
+
+.swiper .swiper-nav-wrapper .swiper-button-prev i,
+.swiper .swiper-nav-wrapper .swiper-button-next i {
+  font-size: 38px;
+  color: green;
+}
+
+.swiper-pagination {
+  margin: 0;
+  padding: 0;
+  position: relative !important;
+  display: flex;
+  width: auto;
+}
+
+.swiper-pagination .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 100;
+  background: rgb(23, 210, 110) !important;
+}
+
+.swiper-pagination-bullet {
+  background: red !important;
+  transition: all 1.2s ease-in-out;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  top: 0;
+  bottom: 0;
+  width: auto;
+  padding: 0 0.5em;
+}
+
+.swiper-pagination-bullet-active {
+  transform: scale(1.0);
+}
+
 @media (min-width: 900px) {
   :root {
     --header-height: 90px;
@@ -466,7 +686,7 @@ img {
   }
 
   .hero__content-img {
-    border-radius: 10px;
+    border-radius: 50px;
   }
 
   .hero__title {
@@ -490,6 +710,8 @@ img {
     font-size: 1.25rem;
   }
 }
+
+
 
 @media (min-width: 1024px) {
   .section__title {
@@ -538,6 +760,11 @@ img {
     width: 60%;
   }
 }
+
+
+
+
+
 
 /* Unidades de Medida */
 /* Absolutas: px */

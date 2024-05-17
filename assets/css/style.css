@@ -186,7 +186,7 @@ img {
   }
 
   .menu__link {
-    color: hsl(140, 73%, 37%);
+    color: var(--color-secondary);
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
@@ -198,7 +198,7 @@ img {
   }
 
   .menu__link.active {
-    color: rgb(90, 15, 43);
+    color: var(--color-secondary);
   }
 
   .btn-resume {
@@ -296,6 +296,7 @@ img {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 400;
+  color: var(--color-secondary)
 }
 
 .hero__name {
@@ -336,39 +337,7 @@ img {
   transform: scale(1.1);
 }
 
-@keyframes saludo-animacion {
-  0% {
-    transform: rotate(0deg);
-  }
 
-  10% {
-    transform: rotate(14deg);
-  }
-
-  20% {
-    transform: rotate(-8deg);
-  }
-
-  30% {
-    transform: rotate(14deg);
-  }
-
-  40% {
-    transform: rotate(-4deg);
-  }
-
-  50% {
-    transform: rotate(10deg);
-  }
-
-  60% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
 
 .hero__description {
   font-size: 1.5rem;
@@ -761,66 +730,3 @@ img {
   }
 }
 
-
-
-
-
-
-/* Unidades de Medida */
-/* Absolutas: px */
-
-/* Relativas: em, rem, %, vw, vh */
-/* .por {
-  background-color: lightblue;
-  width: 50%;
-}
-
-.por p {
-  width: 70%;
-  background-color: lightgreen;
-}
-
-.vw {
-  width: 50vw;
-  background-color: lightgreen;
-}
-
-.vw p {
-  position: relative;
-  top: 10px;
-  width: 70vw;
-  background-color: lightblue;
-} */
-
-/* .por {
-  background-color: lightblue;
-  width: 100%;
-  height: 50%;
-}
-
-.vw {
-  width: 100vw;
-  height: 100vh;
-  background-color: lightgreen;
-} */
-
-/* min-width de esta anchura para arriba */
-/* max-width de esta anchura para abajo */
-
-/* @media screen and (max-width: 200px) {
-  .header {
-    background-color: lightgreen;
-  }
-}
-
-@media screen and (min-width: 200px) {
-  .header {
-    background-color: lightcoral;
-  }
-}
-
-@media screen and (min-width: 400px) {
-  .header {
-    background-color: lightblue;
-  }
-} */
